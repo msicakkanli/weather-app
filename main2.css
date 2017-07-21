@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+.ust {
+    background-color: navy;
+    height: 250px;
+    width: 430px;  
+}
+
+body {
+    
+    font: "PT Sans";
+}
+
+#cityName {
+    
+    padding-top: 30px;
+    font-size: 1.1em;
+    text-align: center;
+    color: azure;
+    font: "PT Sans";
+    font-weight: normal;
+    
+}
+
+#cityDurum {
+     
+    font-size: 0.9em;
+    text-align: center;
+    color: azure;
+    font: "PT Sans";
+    font-weight: normal;
+}
+
+.orta {
+    
+    display: flex;
+    margin-left: 80px;
+    margin-top: 30px;
+    color: azure;
+    font: "PT Sans";
+    font-weight: normal;
+}
+
+#ikonList {
+    list-style: none;
+}
+
+.alt {
+    display: flex;
+    justify-content: space-between;
+    color: azure;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#gece {
+    color: darkgrey;
+    font-weight: 100;
+}
+
+#gunduz {
+    margin-left: 15px;
+    margin-right: 38px
+}
+
+
+
+.table {
+    
+    width: 380px;
+    margin-left: 10px;
+}
+
+.tablo {
+    z-index: 5;
+    position: absolute;
+   margin-left: 10px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin-top: -20px;
+}
+
+#statikToday {
+    margin-left: 15px;
+    font-weight: 100;
+}
+.sicaklik{
+    margin-top: 9px;
+}
+

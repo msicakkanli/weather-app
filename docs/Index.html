@@ -4,63 +4,78 @@
   <meta charset="utf-8">
   <title>Hava Raporu</title>
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="SlickNav/slicknav.css" />
 
-<link rel="stylesheet" href="css/main.css">
-
-</head>
-    <div class="container">
-    <nav class="navbar navbar-light bg-faded">
-  <form class="form-inline">
-
-    <button class="btn  btn-success" type="button" id="istanbul">Istanbul</button>
-    <button class="btn  btn-primary" type="button" id="ankara">Ankara</button>
-       <button class="btn  btn-primary" type="button" id="izmir">İzmir</button>
-       <button class="btn  btn-primary" type="button" id="antalya">Antalya</button>
-       <button class="btn  btn-primary btn-lg btn-block" type="button" id="detay">5 Günlük Grafik</button>
-  </form>
-</nav>
-    </div>
-<body>
-    <div class="header container">
-      <div class="row">
-    <div class="col-6 ">
-     <h1 id="city"></h1>
-    </div>
-    <div class="col ">
-    <ul id="sehir">
-        </ul>
-    </div>
-  </div>
-    </div>
-    <div class="container">
-    <canvas id="myChart"></canvas>
-    </div>
-    <div class="container">
-    <table class="table" id="table">
+<link rel="stylesheet" href="main2.css">
+    
+</head>  
+   <body>
+       
+    <div class="ust">
+    <select class="citySelect" >
+    <option value="Istanbul">Istanbul</option>
+  <option value="Izmir">Izmir</option>
+  <option value="Ankara">Ankara</option>
+  <option value="Antalya">Antalya</option>
+    </select>    
+   
+    <h2 id="cityDurum"></h2>    
+    <div class="orta">
+    <div class="ikon">
+        <ul id="ikonList"></ul>
+        </div>
+    <div class="sicaklik">
+    <h1 id="sehirIsi"></h1>    
+    </div>    
+       
+    </div>  
+    <div class="alt">
+        <div>
+        <p id="statikToday">Today <span id="today"></span></p>
+        </div>
+        <div id="todayminmax"></div>
+      <p><span id="gece"></span><span id="gunduz"></span></p>
+        </div>    
+       </div>
+       <div class="tablo">
+        <table class="table" id="table">
+ 
   <tbody>
-     <tr id="gunler">
+      
+     <tr id="tomorrow">
+     <td>Tomorrow</td>
+    
+    </tr>  
+    <tr id="hafta3">
+      
     </tr>
-    <tr id="sicaklik">
+       <tr id="hafta4">
+       
     </tr>
-       <tr id="iconlar">
+         <tr id="hafta5">
+        
     </tr>
+   
   </tbody>
 </table>
-    </div>
-
+     </div>  
+    
+       
+   
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>   
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"> </script>
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
     <script src="js/app2.js"></script>
+ <script src="SlickNav/jquery.slicknav.min.js"></script>
     </body>
 </html>
