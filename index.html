@@ -11,17 +11,57 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
    
 
-<link rel="stylesheet" href="main2.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/main2.css">    
     
 </head>  
+
+   
    <body>
+<button id="myBtn">Add City</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      
+    </div>
+    <div class="modal-body">
+     <input type="text" name="searchCity" placeholder="Enter City Name" id="cityText">
+      
+    <input type="submit" value="Search" id='search'> 
+   
+  <table class="searchTable" >
+       <tr id="result">
+      <td></td>
+      </tr>
+      <tr id="save">
+      <td></td>
+      </tr>
+        </table>
+        <div>
+        <span id="save"></span>    
+        </div>
+    </div>
+    <div class="modal-footer">
+      <input type="submit" value="Save" id="citySaved">   
+    </div>
+  </div>
+
+</div>
+       
        
     <div class="ust">
+        
     <select class="citySelect" id="citySelect" >
     <option value="Istanbul">Istanbul</option>
   <option value="Izmir">Izmir</option>
   <option value="Ankara">Ankara</option>
   <option value="Antalya">Antalya</option>
+    
     </select>    
    
     <h2 id="cityDurum"></h2>    
@@ -64,8 +104,8 @@
   </tbody>
 </table>
      </div>  
-    
-       
+   
+   
    
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -74,8 +114,10 @@
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
+      <script src="js/app.js"></script>
     <script src="js/app2.js"></script>
+        <script src="js/modal.js"></script>
+   
  
     </body>
 </html>
