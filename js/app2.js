@@ -424,6 +424,16 @@ var todayDate= Date();
 var todayDateFirst =todayDate.substring(0, 10);
 $('#today').html(todayDateFirst);
 
+//add city from localstorage to select menü
+$('#citySelect').on('click',function(){
+    var lL = localStorage.length;
+    if (lL >0){
+    var storedCitys=JSON.parse(localStorage.getItem("citys"));
+     $('#citySelect').append('<option value="'+storedCitys+'">'+storedCitys+'</option>');
+    localStorage.removeItem("citys");
+    }
+})
+
 
 
  

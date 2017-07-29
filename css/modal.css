@@ -82,3 +82,7 @@
 #citySaved {
     display: none;
 }
+
+ .selected {
+    color: red;
+  }
